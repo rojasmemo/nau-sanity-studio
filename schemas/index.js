@@ -14,6 +14,7 @@ export const schemaTypes = [
   simbolismoNumerico,
   paginaSimbolismoNumerico,
   paginaDonar,
+  paginaContacto,
   banner,
   link,
 ];
