@@ -16,7 +16,13 @@ export default {
       title: 'Enlace Interno',
       description: 'Selecciona una página dentro del sitio para enlazar.',
       type: 'reference',
-      to: [{type: 'homePage'}, {type: 'paginaEncuentros'}, {type: 'paginaSimbolismoNumerico'}], // Puedes añadir más tipos de página aquí
+      to: [
+        {type: 'homePage'}, 
+        {type: 'paginaEncuentros'}, 
+        {type: 'paginaSimbolismoNumerico'},
+        {type: 'paginaContacto'},
+        {type: 'paginaDonar'},
+      ],
     },
     {
       name: 'externalUrl',

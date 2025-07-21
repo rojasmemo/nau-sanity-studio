@@ -27,7 +27,12 @@ export default {
     },
   ],
   preview: {
-    select: {},
-    prepare: () => ({title: 'Página de Contacto'}),
+    select: {
+      title: 'title', // 1. Selecciona el campo 'title' del documento
+    },
+    // 2. Usa el campo seleccionado para construir la vista previa
+    prepare({title}) {
+      return {title: title || 'Página de Contacto (sin título)'}
+    },
   },
 }
